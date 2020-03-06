@@ -52,7 +52,7 @@ li a:hover {
 
 header .navbk {
 
-    background-color: coral;
+    background-color: rgb(195, 248, 226);
     overflow: hidden;
     padding-bottom: 0;
     padding-top: 50px;
@@ -100,7 +100,7 @@ h1 img {
     width: 400px;
     padding: 2px 20px; 
     outline: 3px;
-    background-color: greenyellow;
+    background-color: rgb(157, 160, 152);
 
     max-width: 100%;
     
@@ -121,7 +121,7 @@ h1 img {
     display: inline-block;
     margin: 0;
     
-    background-color: hotpink;
+    background-color: rgb(243, 237, 240);
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 5px;
@@ -135,7 +135,7 @@ h1 img {
     position: fixed;
     overflow: hidden;
     bottom:0;
-    background-color: rgb(97, 243, 129);
+    background-color: rgb(220, 238, 224);
     padding: 5px 12px;
     height: 2.5em;
     width: 100%;
@@ -156,6 +156,26 @@ h1 img {
     margin: 0 auto;
     box-sizing: border-box;
     min-width: 500px;
+}
+
+.round {
+    position: absolute;
+    top: 50px;
+    right: 0em;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 2px;
+    border-radius: 30px;
+}
+
+.appi {
+    margin-right: 10px;
+    margin-left: 0;
+    padding-right: 10px;
+    padding-left: 1px;
 }
 
 
