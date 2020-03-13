@@ -5,36 +5,43 @@
 
 
 body {
+    
     background-color: white;
-    /* background-image: url("image/google\ earth.jpg");
+   
+    /* not a good position for the logo
+
+    
+    background-image: url("image/google\ earth.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 50% 50%; */
+    background-position: 50% 50%;      */
 
    
 }
 
 
 
-ul {
+ul {    /* to overflow the nav background 100 */
+    
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
     width: 100%;
-    position: fixed;
+    position: fixed;   
     
 }
 
 
-li {
+li {    /* horizontal position navigation bar */
+    
     display: inline-flex;
    
-    
 }
 
-li a {
-    display: inline-block;
+li a {      /* navigation bar */
+    
+    /*display: inline-block;   Prob don't need this*/
     padding: 10px 10px 0px 5px;
     margin-left: 0;
     margin-right: 0;
@@ -46,14 +53,13 @@ li a {
     
 }
 
-li a:hover {
+li a:hover {    /* hover color effect */
     color: red;
 }
 
-header .navbk {
+header .navbk { /* top of the page navigation bar, background color */
 
     background-color: rgb(131, 206, 175);
-    overflow: hidden;
     padding-bottom: 0;
     padding-top: 50px;
     width: 100%;
@@ -62,62 +68,65 @@ header .navbk {
     
 }
 
-.glogo {
+.glogo {    /* Google log kinda centered lol */
 
     position: absolute;
     display: flex;
-    top: 230px;
-    left: 520px;
+    top: 150px;
+    left: 550px;
     padding-top: 50px;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.miclogo {
+.miclogo {  /* mic logo in the search bar */
+    
     padding: 10px;
     display: flex;
 }
 
 
-.searchbar {
+.searchbar {    /* Search bar */
     
     position: absolute;
-    left: 700px;
-    bottom: 280px;
+    left: 730px;
+    bottom: 320px;
     margin-top: 10px;
     max-width: 100%;
     border-radius: 30px;
     transform: translate(-50%,-50%);
     padding: 10px;
-    background: blue;
+    background: rgb(158, 200, 235);
 }
 
-.searchbar input {
-    
-    
+.searchbar input {  /*Search bar */
     
     width: 375px;
     padding: 12px;
-    /*border-radius: 30px; */
-    
     margin: 2px 10px 5px 5px;
     height: 25px;
     
-    
-}  
-
-
-
-.submitmod {
-    position: absolute;
-    bottom: 230px;
-    left: 610px;
-    margin: 3px;
-
-    
 }
 
-.submitmod input {
+::-webkit-input-placeholder {
+    
+    font-weight: bolder;
+    font-size: 1em;
+    font-style: italic;
+    color: red;
+}
+
+
+
+.submitmod {    /* submit buttons */
+    position: absolute;
+    bottom: 300px;
+    left: 650px;
+    margin: 3px;
+
+}
+
+.submitmod input { /* submit buttons */
     text-align: center;
     display: inline-block;
     margin: 2px;;
@@ -131,18 +140,10 @@ header .navbk {
 }
 
 
-.footermod {
-    position: fixed;
-    overflow: hidden;
-    bottom:0;
-    background-color: rgb(220, 238, 224);
-    padding: 5px 12px;
-    height: 2.5em;
-    width: 100%;
-    left: 0;
-}
 
-.round {
+
+.round {    /* Profile image */
+   
     position: absolute;
     top: 50px;
     right: 0em;
@@ -155,14 +156,15 @@ header .navbk {
     border-radius: 30px;
 }
 
-.appcolor img:hover {
+.appcolor img:hover {   /* app icon */
 
     background-color:rgb(226, 114, 40);
     margin: 0; 
 
 }
 
-.appi {
+.appi { /* app icon*/
+   
     margin-right: 15px;
     margin-left: 0;
     padding-right: 10px;
@@ -170,14 +172,16 @@ header .navbk {
 }
 
 .container {
+    
     /*display: flex;
-    flex-direction: column;*/
+    
+    flex-direction: column;* i guss i don't need this class.*/
   
 
 }
 
 .container div {
-
+                    /* keeping my search bar & submit button from collapsing*/
     
      display: flex; 
      margin: 0;
@@ -186,7 +190,7 @@ header .navbk {
 
 
 
-.box1 {
+.box1 {     /* creating a couple of flexbox to contain the div & and for possible borders*/
 
      flex: 1px;
         
@@ -208,7 +212,19 @@ header .navbk {
 
 
 
-@media only screen and (max-width: 700px) {
+.footermod {    /* fotter bottom of the page */
+   
+    position: fixed;
+    overflow: hidden;
+    bottom:0;
+    background-color: rgb(220, 238, 224);
+    padding: 5px 12px;
+    height: 2.5em;
+    width: 100%;
+    left: 0;
+}
+
+@media only screen and (max-width: 700px) { /* responsive window, but my divs are gone */
     body {
         
       background-color: lightblue;
